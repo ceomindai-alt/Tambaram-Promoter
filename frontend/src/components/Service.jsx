@@ -158,7 +158,7 @@ export default function Service() {
           {/* CONTENT */}
           <div className="p-10">
             <h3 className="text-xl sm:text-2xl font-semibold text-green-900 mb-4">
-              WHY INVEST IN TAMBARAM?
+              WHY INVEST IN TAMBARAM ?
             </h3>
 
             <p className="text-gray-700 mb-4">
