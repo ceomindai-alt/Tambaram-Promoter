@@ -123,7 +123,7 @@ export default function Contact() {
           <div className="space-y-4">
             <p>
               <strong className="text-gold-gradient">Address:</strong><br />
-              No. 33, Old State Bank Colony, Kishkinta Road, West Tambaram, Tambaram, Chennai 45, 600045
+              No. 37, Old State Bank Colony, Kishkinta Road, West Tambaram, Tambaram, Chennai 45, 600045
             </p>
             <p>
               <strong className="text-gold-gradient">Phone:</strong><br />

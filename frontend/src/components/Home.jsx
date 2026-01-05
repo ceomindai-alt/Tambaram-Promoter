@@ -18,10 +18,7 @@ export default function Home() {
   return (
     <section className="w-full overflow-hidden py-10 ">
 
-      {/* TITLE */}
-      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gold-gradient">      
-        Tambaram Land Promoter
-      </h2>
+ 
 
       {/* ================= IMAGE SLIDER ================= */}
       <div className="relative w-full overflow-hidden">
@@ -54,13 +51,13 @@ export default function Home() {
           Complete Real Estate Solution in Tambaram
         </h3>
 
-        <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
+        <p className="text-gray-300 text-base sm:text-base leading-relaxed mb-4">
           Property purchase is not just a transaction — it is a long-term decision.
           At <strong>Tambaram Land Promotor</strong>, we ensure every customer gets
           <strong> legal clarity, location advantage, and future value</strong>.
         </p>
 
-        <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
+        <p className="text-gray-300 text-base sm:text-base leading-relaxed mb-4">
           We assist customers who want to:
         </p>
       </div>
@@ -69,9 +66,9 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
           {[
-            "Buy plots, villas, or flats in Tambaram",
-            "Sell land, houses, or apartments at the right market price",
-            "Invest in high-appreciation real estate",
+            "Buy Plots, Villas, or Flats in Tambaram",
+            "Sell Land, Houses, or Apartments at the right Market Price",
+            "Invest in high-appreciation Real Estate",
           ].map((text, index) => (
             <div
               key={index}
@@ -80,7 +77,7 @@ export default function Home() {
                 rounded-2xl
                 px-6 py-6
                 font-semibold
-                text-sm sm:text-base
+                text-base sm:text-base
                 text-green-900
                 shadow-xl
                 bg-[linear-gradient(90deg,#8F6B2D_0%,#C9A44C_40%,#E6C76A_60%,#8F6B2D_100%)]
@@ -105,7 +102,7 @@ export default function Home() {
           ))}
         </div>
 
-        <p className="text-white font-semibold text-sm sm:text-base text-center mt-8">
+        <p className="text-white font-semibold text-base sm:text-base text-center mt-8">
           Our goal is to deliver safe, transparent, and stress-free property transactions.
         </p>
       </div>

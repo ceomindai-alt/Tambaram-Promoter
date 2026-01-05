@@ -55,7 +55,7 @@ export default function Header() {
     src={log}
     alt="Tambaram Land Promoter"
     className={`flex-shrink-0 transition-all duration-300
-      ${isScrolled ? "h-10" : "h-14"}`}
+      ${isScrolled ? "h-22" : "h-24"}`}
   />
 
   {/* TEXT */}
@@ -64,7 +64,7 @@ export default function Header() {
     flex flex-wrap items-center justify-center sm:justify-start
     gap-1 sm:gap-2
     font-bold
-    text-base sm:text-base md:text-lg lg:text-xl
+    text-xl sm:text-xl md:text-xl lg:text-2xl
     leading-tight
     text-green-600
     text-center sm:text-left

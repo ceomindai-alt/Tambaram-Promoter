@@ -17,11 +17,11 @@ export default function About() {
 
         {/* ================= SECTION TITLE ================= */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold text-gold-gradient">
-            About Tambaram Promoters
+          <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-gold-gradient">
+            About Tambaram Promoter
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base max-w-3xl mx-auto text-gold-gradient">
+          <p className="mt-4 text-base sm:text-base max-w-3xl mx-auto text-gold-gradient">
             Trusted real estate solutions for land, houses, apartments, villas,
             and individual plots in and around Tambaram.
           </p>
@@ -34,7 +34,7 @@ export default function About() {
           <div className="space-y-5 text-white leading-relaxed text-base">
             <p>
               <strong className="text-green-700">
-                Tambaram Promoters
+                Tambaram Promoter
               </strong>{" "}
               is a reliable real estate development and marketing company
               specializing in{" "}
