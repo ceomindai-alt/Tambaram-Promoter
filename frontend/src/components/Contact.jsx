@@ -110,7 +110,7 @@ export default function Contact() {
 
       {/* HEADER */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gold-gradient">Contact Us</h1>
+        <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-gold-gradient">Contact Us</h1>
         <p className="text-black mt-2">We are here to help. Reach out anytime.</p>
       </div>
 

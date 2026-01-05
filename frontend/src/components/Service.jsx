@@ -26,7 +26,7 @@ export default function Service() {
     >
       {/* ================= HEADER ================= */}
       <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-down">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-wide text-gold-gradient">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-wide text-gold-gradient">
           OUR SERVICES & PROCESS
         </h2>
         <p className="mt-3 text-gold-gradient

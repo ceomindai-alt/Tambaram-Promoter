@@ -34,7 +34,7 @@ export default function Gallery() {
     " id="gallery">
       
       <h2 
-        className="text-4xl font-bold text-center mb-10 text-gold-gradient"
+        className="text-3xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-gold-gradient"
         data-aos="fade-up"
       >
         Our Gallery
