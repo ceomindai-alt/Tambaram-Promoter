@@ -2,6 +2,24 @@ import rayappa from "../assets/projects/r1.png";
 import grNagar from "../assets/projects/r2.png";
 import kanna from "../assets/projects/r3.png";
 
+/* ================= WHATSAPP HANDLER ================= */
+const openWhatsApp = (project) => {
+  const phoneNumber = "919952957187"; // no +
+  const message = `
+Hello Tambaram Land Promoter 👋
+
+I am interested in the following project:
+
+🏡 Project: ${project.name}
+📌 Type: ${project.tag}
+💰 Offer Price: ${project.price.offer}
+
+Please share more details and site visit availability.
+  `;
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+};
+
 export default function Project() {
   const projects = [
     {
@@ -74,7 +92,7 @@ export default function Project() {
   ];
 
   return (
-    <section className="w-full py-20 ">
+    <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
 
         {/* SECTION HEADER */}
@@ -92,10 +110,7 @@ export default function Project() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="
-                bg-white rounded-2xl shadow-xl overflow-hidden
-                transition-all duration-300 hover:-translate-y-1
-              "
+              className="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
             >
               <div className="grid grid-cols-1 lg:grid-cols-2">
 
@@ -143,75 +158,39 @@ export default function Project() {
                   </div>
 
                   {/* PRICE BOX */}
-                 <div
-  className="
-    relative overflow-hidden
-    mt-6 rounded-xl p-5
-    text-black
-    bg-[linear-gradient(90deg,#8F6B2D_0%,#C9A44C_40%,#E6C76A_60%,#8F6B2D_100%)]
-    shadow-lg
-  "
->
-  {/* PRICE BOX SHINE */}
-  <span
-    className="
-      absolute inset-0
-      bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.45),transparent)]
-      animate-shimmer
-    "
-  />
+                  <div className="relative overflow-hidden mt-6 rounded-xl p-5 bg-[linear-gradient(90deg,#8F6B2D_0%,#C9A44C_40%,#E6C76A_60%,#8F6B2D_100%)] shadow-lg">
+                    <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.45),transparent)] animate-shimmer" />
 
-  {/* CONTENT */}
-  <div className="relative z-10">
-    <p className="text-sm text-[#0F3D2E]">
-      Market Price: {project.price.market}
-    </p>
+                    <div className="relative z-10 text-[#0F3D2E]">
+                      <p className="text-sm">
+                        Market Price: {project.price.market}
+                      </p>
+                      <p className="font-semibold text-lg mt-1">
+                        Our Price: {project.price.offer}
+                      </p>
 
-    <p className="font-semibold text-lg mt-1 text-[#0F3D2E]">
-      Our Price: {project.price.offer}
-    </p>
+                      {/* WHATSAPP BUTTON */}
+                      <div className="flex justify-center">
+                        <button
+                          onClick={() => openWhatsApp(project)}
+                          className="relative overflow-hidden mt-4 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base md:text-lg font-semibold rounded-lg bg-[linear-gradient(90deg,#C9A44C,#E6C76A)] shadow-md transition-transform duration-300 active:scale-95"
+                        >
+                          <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)] animate-shimmer" />
+                          <span className="relative z-10">
+                            Book Site Visit
+                          </span>
+                        </button>
+                      </div>
 
-    {/* BUTTON */}
-    <div className="flex justify-center">
-    <button
-      className="
-        relative overflow-hidden
-        mt-4
-        px-6 sm:px-8
-        py-2.5 sm:py-3
-        text-sm sm:text-base md:text-lg
-        font-semibold
-        text-[#0F3D2E]
-        rounded-lg
-        bg-[linear-gradient(90deg,#C9A44C,#E6C76A)]
-        shadow-md
-        transition-transform duration-300
-        active:scale-95
-      "
-    >
-      {/* BUTTON SHINE */}
-      <span
-        className="
-          absolute inset-0
-          bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)]
-          animate-shimmer
-        "
-      />
-
-      <span className="relative z-10">
-        Book Site Visit
-      </span>
-    </button>
-  </div>
-  </div>
-
-
+                    </div>
                   </div>
+
                 </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

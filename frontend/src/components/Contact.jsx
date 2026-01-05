@@ -12,7 +12,7 @@ export default function Contact() {
   const [loadMap, setLoadMap] = useState(false);
 
   const googleSheetsURL =
-    "https://script.google.com/macros/s/AKfycbyE_nZPNHGA2bewuf_pwcAbNvtvmOfwwkWs8e2JCI6yvbElNZ7gK56rOmoNNnly7IQ/exec";
+    "https://script.google.com/macros/s/AKfycbzeDhQE6ko2j_4uRhS8CIM8qgRCRh_VKdYEwl854erJTtkuSerkqClUDKeMfmwieg1Cyg/exec";
 
   /* Lazy load map */
   useEffect(() => {
@@ -45,10 +45,10 @@ export default function Contact() {
     try {
       const emailjs = (await import("emailjs-com")).default;
       await emailjs.send(
-        "service_zuniol3",
-        "template_m48blck",
+        "service_cbeh8os",
+        "template_m8warbs",
         formData,
-        "tpeyyKcqgk8nnrvyr"
+        "fUvcofz2o6GUwkUhJ"
       );
     } catch (err) {
       console.error("Email error:", err);
@@ -79,7 +79,8 @@ export default function Contact() {
       {/* SUCCESS MODAL – LIGHTWEIGHT */}
       {success && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-[9999]">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 flex flex-col items-center animate-fadeIn">
+          <div className="bg-[linear-gradient(90deg,#8F6B2D_0%,#C9A44C_40%,#E6C76A_60%,#8F6B2D_100%)]
+           rounded-2xl shadow-2xl p-8 flex flex-col items-center animate-fadeIn">
 
             <div className="w-16 h-16 flex items-center justify-center rounded-full bg-green-100">
               <svg
@@ -116,42 +117,43 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
 
         {/* LEFT */}
-        <div className="space-y-6 text-gold-gradient text-xl">
-          <h2 className="text-2xl font-semibold btn-secondary">Get in Touch</h2>
+        <div className="space-y-6 text-black text-xl">
+          <h2 className="text-2xl font-bold text-gold-gradient">Get in Touch</h2>
 
           <div className="space-y-4">
             <p>
-              <strong className="">Address:</strong><br />
-              Tambaram, Chennai.
+              <strong className="text-gold-gradient">Address:</strong><br />
+              No. 33, Old State Bank Colony, Kishkinta Road, West Tambaram, Tambaram, Chennai 45, 600045
             </p>
             <p>
-              <strong className="">Phone:</strong><br />
-              +91 1234567890
+              <strong className="text-gold-gradient">Phone:</strong><br />
+              +91 90038 50348
             </p>
             <p>
-              <strong className="">Email:</strong><br />
-              info@tambaramlandpromotor.com
+              <strong className="text-gold-gradient">Email:</strong><br />
+               tambarampromoters@gmail.com
             </p>
           </div>
 
           {/* MAP – Lazy */}
-          <div ref={mapRef} className="w-full h-64 rounded-xl overflow-hidden shadow">
-            {loadMap && (
-              <iframe
-                title="Map Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.441682964013!2d80.070324!3d12.9243927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMTLCsDU1JzI3LjgiTiA4MMKwMDQnMjIuNCJF!5e0!3m2!1sen!2sin"
-                className="w-full h-full border-0"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            )}
-          </div>
+          {/* MAP – Lazy */}
+<div ref={mapRef} className="w-full h-64 rounded-xl overflow-hidden shadow">
+  {loadMap && (
+    <iframe
+      title="Tambaram Land Promoter Location"
+      src="https://www.google.com/maps?q=12.9307835,80.1104746&z=17&output=embed"
+      className="w-full h-full border-0"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  )}
+</div>
+
         </div>
 
         {/* RIGHT FORM */}
         <div className="    bg-[linear-gradient(90deg,#8F6B2D_0%,#C9A44C_40%,#E6C76A_60%,#8F6B2D_100%)] p-8 rounded-xl shadow space-y-6">
-          <h2 className="text-2xl font-semibold text-blue-900">
+          <h2 className="text-2xl font-semibold text-green-900">
             Send Us a Message
           </h2>
 

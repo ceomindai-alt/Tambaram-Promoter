@@ -3,6 +3,21 @@ import sellerImg from "../assets/img/seller.png";
 import legalImg from "../assets/img/legal.png";
 import investImg from "../assets/img/invest.png";
 
+const openWhatsApp = (serviceType) => {
+  const phoneNumber = "919952957187"; // no +
+  const message = `
+Hello Tambaram Land Promoter 👋
+
+I am interested in your service:
+
+📌 Service Type: ${serviceType}
+
+Please share more details and site visit availability.
+  `;
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+};
+
 export default function Service() {
   return (
     <section
@@ -39,7 +54,7 @@ export default function Service() {
             {/* CONTENT */}
             <div className="p-8 flex flex-col justify-between">
               <div>
-                <h4 className="text-lg font-semibold text-green-900 mb-4">
+                <h4 className="text-2xl font-bold text-green-900 mb-4">
                   👤 For Buyers
                 </h4>
 
@@ -53,9 +68,38 @@ export default function Service() {
                 </ul>
               </div>
 
-              <button className="btn-primary mt-6 w-fit transition-transform duration-200 hover:scale-[1.03]">
-                Book Site Visit
-              </button>
+              <div className="flex justify-center">
+    <button
+      onClick={() => openWhatsApp("Buyer Services")}
+      className="
+        relative overflow-hidden
+        mt-4
+        px-6 sm:px-8
+        py-2.5 sm:py-3
+        text-sm sm:text-base md:text-lg
+        font-semibold
+        text-[#0F3D2E]
+        rounded-lg
+        bg-[linear-gradient(90deg,#C9A44C,#E6C76A)]
+        shadow-md
+        transition-transform duration-300
+        active:scale-95
+      "
+    >
+      {/* BUTTON SHINE */}
+      <span
+        className="
+          absolute inset-0
+          bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)]
+          animate-shimmer
+        "
+      />
+
+      <span className="relative z-10">
+        Book Site Visit
+      </span>
+    </button>
+  </div>
             </div>
 
             {/* IMAGE */}
@@ -79,7 +123,7 @@ export default function Service() {
             {/* CONTENT */}
             <div className="p-8 flex flex-col justify-between">
               <div>
-                <h4 className="text-lg font-semibold text-green-900 mb-4">
+                <h4 className="text-2xl font-bold text-green-900 mb-4">
                   🏠 For Sellers
                 </h4>
 
@@ -92,9 +136,38 @@ export default function Service() {
                 </ul>
               </div>
 
-              <button className="btn-primary mt-6 w-fit transition-transform duration-200 hover:scale-[1.03]">
-                Book Site Visit
-              </button>
+              <div className="flex justify-center">
+    <button
+      onClick={() => openWhatsApp("Seller Services")}
+      className="
+        relative overflow-hidden
+        mt-4
+        px-6 sm:px-8
+        py-2.5 sm:py-3
+        text-sm sm:text-base md:text-lg
+        font-semibold
+        text-[#0F3D2E]
+        rounded-lg
+        bg-[linear-gradient(90deg,#C9A44C,#E6C76A)]
+        shadow-md
+        transition-transform duration-300
+        active:scale-95
+      "
+    >
+      {/* BUTTON SHINE */}
+      <span
+        className="
+          absolute inset-0
+          bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)]
+          animate-shimmer
+        "
+      />
+
+      <span className="relative z-10">
+        Book Site Visit
+      </span>
+    </button>
+  </div>
             </div>
 
             {/* IMAGE */}

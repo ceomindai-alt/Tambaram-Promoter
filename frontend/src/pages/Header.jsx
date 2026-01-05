@@ -64,14 +64,14 @@ export default function Header() {
     flex flex-wrap items-center justify-center sm:justify-start
     gap-1 sm:gap-2
     font-bold
-    text-sm sm:text-base md:text-lg lg:text-xl
+    text-base sm:text-base md:text-lg lg:text-xl
     leading-tight
-    text-green-500
+    text-green-600
     text-center sm:text-left
   "
 >
   <span>Tambaram Land</span>
-  <span className="text-gold-gradient">Promoters</span>
+  <span className="text-gold-gradient">Promoter</span>
 </p>
 
 
