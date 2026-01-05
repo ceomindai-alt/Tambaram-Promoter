@@ -21,7 +21,7 @@ export default function Footer() {
 
         {/* VALUES */}
         <p className="mt-2 text-xs sm:text-sm md:text-base tracking-wide">
-          Trust • Loyalty • Prosperity.
+          Trust • Loyalty • Prosperity
         </p>
       </div>
     </footer>

@@ -4,7 +4,7 @@ import legalImg from "../assets/img/legal.png";
 import investImg from "../assets/img/invest.png";
 
 const openWhatsApp = (serviceType) => {
-  const phoneNumber = "919952957187"; // no +
+  const phoneNumber = "919003850348"; // no +
   const message = `
 Hello Tambaram Land Promoter 👋
 

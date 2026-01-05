@@ -4,7 +4,7 @@ import kanna from "../assets/projects/r3.png";
 
 /* ================= WHATSAPP HANDLER ================= */
 const openWhatsApp = (project) => {
-  const phoneNumber = "919952957187"; // no +
+  const phoneNumber = "919003850348"; // no +
   const message = `
 Hello Tambaram Land Promoter 👋
 

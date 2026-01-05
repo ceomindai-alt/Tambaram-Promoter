@@ -1,5 +1,5 @@
 const openWhatsApp = (category) => {
-  const phoneNumber = "919952957187"; // WhatsApp number (no +)
+  const phoneNumber = "919003850348"; // WhatsApp number (no +)
   const message = `
 Hello Tambaram Land Promotor 👋
 
