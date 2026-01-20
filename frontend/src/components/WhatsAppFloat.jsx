@@ -1,6 +1,8 @@
 export default function WhatsAppFloat() {
   const whatsappNumber = "919003850348";
-  const message = "Hello, I would like to know more about your services.";
+  const message = `Hello Tambaram Land Promoter 👋
+I am interested in your service:
+Please share more details.`;
   const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
